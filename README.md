@@ -1,6 +1,6 @@
 # Pipeline Pilot
 
-Test automation (Playwright, pytest, Locust) and a CI/CD pipeline (Docker, GitHub Actions, AWS EC2) for a small Flask task tracker.
+Test automation (Playwright, pytest, Locust) and a CI/CD pipeline (Docker, GitHub Actions, GHCR) for a small Flask task tracker.
 
 A small, runnable test automation project. It tests a Flask task tracker (web page plus REST API) at three levels:
 
@@ -11,7 +11,7 @@ A small, runnable test automation project. It tests a Flask task tracker (web pa
 | Load test | Locust | 20 users, mixed read/write traffic |
 | CI | GitHub Actions | runs API and UI tests, builds and smoke-tests the Docker image, pushes it to GHCR |
 | Container | Docker, gunicorn | non-root image with a health check |
-| CD | GitHub Actions + AWS EC2 | deploys the image over SSH after CI passes (see `docs/DEPLOY_AWS.md`) |
+
 
 ## Run it
 
