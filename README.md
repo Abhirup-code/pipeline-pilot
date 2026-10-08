@@ -33,10 +33,6 @@ locust -f load/locustfile.py --headless -u 20 -r 10 -t 15s --host http://127.0.0
 1,166 requests, 0 failures, median 3 ms, 95th percentile 5 ms, about 78 requests/s.
 This is a local baseline on a tiny in-memory app, not a production benchmark.
 
-## Notes
-
-- The app under test is intentionally small. The point of the repo is the test design.
-- AI assistance (Claude) was used to help write this project. I run and understand every test in it.
 
 ## Run in Docker
 
